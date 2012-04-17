@@ -10,6 +10,6 @@ function! Distance(coor1,coor2)
 endfunction
 
 function! Read_line()
-  let current_line=split(getline(line('.')))
+  let current_line=split(getline("."))
   return [current_line[1],current_line[2],current_line[3]]
 endfunction

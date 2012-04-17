@@ -33,7 +33,9 @@ function! Dist()
 endfunction
 
 function! UnHighl()
-  match
-  2match
-  unlet b:ln_old
+  if exists("b:ln_old")
+    match
+    2match
+    unlet b:ln_old
+  endif
 endfunction
