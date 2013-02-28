@@ -66,7 +66,7 @@ function! s:GetEspressoInputType()
   return InputType
 endfunction
 
-function s:GetCellDim()
+function! s:GetCellDim()
     let celldm=["0.52918",1,1]
     for a in range(3)
       let i=a+1
